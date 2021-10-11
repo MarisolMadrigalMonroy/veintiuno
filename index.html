@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8"> 
+  <link rel="stylesheet" href="style.css"> <!--rel define la relación que hay entre dos documentos-->
+</head>
+
+<body>
+  <div>
+    <div>
+      <h1>Veintiuno</h1>
+      <div id="mensaje">Presiona el botón "INICIAR" para comenzar a jugar</div>
+      <div id="start">
+        <button id="btnstart" type="button" onclick="Start()" class="btn">INICIAR</button> <!--La función onclick ejecuta una función cuando se le da clic a un elemento.-->
+      </div>
+      <div class="total">Total $<span id="dolares">100</span><br>Monto a apostar $<input type="numero" id="apuesta" value="5" min="1" max="100"><button id="montoMaximo" type="button" onclick="montoMaximo()" class="btn">Monto máximo</button>
+      </div>
+      <div id="impresion">
+        Juego Del Dealer : <span id="dValor"></span>
+        <div id="cartasDealer"></div>
+        Juego Del Jugador : <span id="jValor"></span>
+        <div id="cartasJugador"></div>
+        <div id="acciones">
+          <button id="btnMantener" type="button" onclick="accionDeLaCarta('mantener')" class="btn">Mantener</button> <!--Ejecuta un script cuando se hace clic en el botón.-->
+          <button id="btnPedir" type="button" onclick="accionDeLaCarta('pedir')" class="btn">Pedir</button>
+          <button id="btnDuplicarApuesta" type="button" onclick="accionDeLaCarta('duplicar')" class="btn">Duplicar</button>
+        </div>
+        <div>
+          <button id="terminar" type="button" onclick="nuevoJuego()" class="btn">Continuar</button>
+        </div>
+      </div>
+      <div>
+      </div>
+      <script src="script.js"></script>
+</body>
+</html>

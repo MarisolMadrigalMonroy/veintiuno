@@ -1,0 +1,146 @@
+body {
+  text-align: center;
+  background-color: pink;
+  margin: 0;
+  padding:0;
+  color: black;
+  font-size: 1em;
+  font: 'arial';
+  position:absolute;
+  left: 30%;
+  top: 30%;
+  transform: translateX('30%') translateY('30%');
+}
+#impresion {
+    font-size: 1.5em;
+  }
+  
+  #terminar, #acciones {
+    display: none;
+  }
+  
+  .btn {
+    border-radius: 5px;
+    padding: 8px 20px;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    text-shadow: 1px 1px #000000;
+    font: normal 700 24px/1 "Calibri", sans-serif;
+  }
+  
+  #portada{
+    height: 160px;
+    width: 120px;
+    background-color: black;
+    border-radius: 10px;
+    position: absolute;
+    border: 1px solid black;
+    padding: 3px;
+  }
+  
+  .icard {
+    height: 160px;
+    width: 120px;
+    padding: 3px;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+    left: 100px;
+    display: inline-block;
+    font-family: 'Lato';
+  }
+  
+  .top-card {
+    font-size: 30px;
+    line-height: 20px;
+    left: 2px;
+    top: 2px;
+  }
+  
+  .content-card {
+    text-align: center;
+    font-size: 70px;
+  }
+  
+  .bottom-card {
+    font-size: 30px;
+    line-height: 20px;
+    right: 2px;
+    bottom: 2px;
+    transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+  }
+  
+  .clubs, .spades {
+    color: black;
+  }
+  
+  .hearts, .diams {
+    color: red;
+  }
+  
+  .hearts .palo::after {
+    content: '\2665';
+  }
+  
+  .diams .palo::after {
+    content: '\2666';
+  }
+  
+  .spades .palo::after {
+    content: '\2660';
+  }
+  
+  .clubs .palo::after {
+    content: '\2663';
+  }
+  
+  #cartasDealer, #cartasJugador {
+    height: 180px;
+    width: 500px;
+  }
+  
+  #mensaje {
+    height: 90px;
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  #btnMantener {
+    background-color: black;
+  }
+  
+  #btnPedir {
+    background-color: black;
+  }
+  
+  #btnDuplicarApuesta {
+    background-color: black;
+  }
+  
+  #terminar {
+    background-color: black;
+    font-size: 50px;
+  }
+  
+  #montoMaximo {
+    background-color: black;
+    font-size: 12px;
+  }
+  
+  #btnstart {
+    background-color: black;
+  }
+  
+  #apuesta {
+    font-size: 30px;
+  }
+  
+  .total {
+    font-size: 30px;
+  }
